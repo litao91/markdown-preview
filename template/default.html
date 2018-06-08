@@ -15,6 +15,7 @@
         'tex2jax.js',
         'AssistiveMML.js',
         'a11y/accessibility-menu.js',
+        "MathMenu.js"
       ],
       jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],
 
@@ -38,14 +39,12 @@
         processEscapes: true
       },
       messageStyle: "none",
-
-        showMathMenu: false,
+        showMathMenu: true,
         showProcessingMessages: false,
         messageStyle: 'none',
         skipStartupTypeset: true, // disable initial rendering
         positionToHash: false
     });
-
     MathJax.Hub.Queue(
       ['Typeset', MathJax.Hub, '_html']
     )
